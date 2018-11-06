@@ -38,11 +38,11 @@ spec:
           image: "graylog2/server:{{ .Values.graylog.image.tag }}"
           env:
           - name: GRAYLOG_PASSWORD_SECRET
-            value: {{required "A valid .Values.graylog.passwordSecret entry required!" .Values.graylog.passwordSecret }}
+            value: {{ required "A valid .Values.graylog.passwordSecret entry required!" .Values.graylog.passwordSecret }}
           - name: GRAYLOG_ROOT_PASSWORD_SHA2
             value: {{ .Values.graylog.passwordSecret | sha256sum }}
           - name: GRAYLOG_MONGODB_URI
-            value: "mongodb://{{ .Values.mongodb.endpointName }}"/graylog?replicaSet=rs0"
+            value: "mongodb://{{ .Values.mongodb.endpointName }}/graylog?replicaSet=rs0"
           - name: GRAYLOG_IS_MASTER
             value: "true"
           - name: GRAYLOG_ELASTICSEARCH_DISCOVERY_ZEN_PING_UNICAST_HOSTS
