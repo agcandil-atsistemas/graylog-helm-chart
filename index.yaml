@@ -3,9 +3,9 @@ entries:
   graylog:
   - apiVersion: v1
     appVersion: 2.4.4
-    created: 2018-11-06T18:09:32.396594153+01:00
+    created: 2018-11-06T18:26:58.588359129+01:00
     description: A Graylog2 Helm chart for Kubernetes
-    digest: ec0b8e59c5da9cb4e602be6b923658829f2cd35005a7666b863515e9e6954f9c
+    digest: 928b46e5543312fb489cb4ad0caac45e5e5c2a1d57594c60934cff5684211f5b
     home: https://github.com/agcandil-atsistemas/graylog-helm-chart.git
     maintainers:
     - email: agarcia@example.com
@@ -16,4 +16,4 @@ entries:
     urls:
     - graylog-0.1.0.tgz
     version: 0.1.0
-generated: 2018-11-06T18:09:32.395089104+01:00
+generated: 2018-11-06T18:26:58.587209093+01:00
