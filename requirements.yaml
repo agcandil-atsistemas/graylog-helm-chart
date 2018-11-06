@@ -1,0 +1,7 @@
+dependencies:
+  - name: mongodb
+    version: 4.8.1
+    repository: "https://kubernetes-charts.storage.googleapis.com/"
+  - name: elasticsearch
+    version: 1.13.2
+    repository: "https://kubernetes-charts.storage.googleapis.com/"
